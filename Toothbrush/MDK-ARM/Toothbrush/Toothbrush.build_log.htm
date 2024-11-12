@@ -1,0 +1,216 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 FJY, 1, LIC=585FJ-UZ3KW-DYWV3-ASPZG-W5ZID-7RTKC
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\programing\Toothbrush\MDK-ARM\Toothbrush.uvprojx
+Project File Date:  11/09/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
+Rebuild target 'Toothbrush'
+assembling startup_stm32f103xb.s...
+compiling ioi2c.c...
+compiling delay.c...
+compiling DS1302.c...
+compiling Interface.c...
+compiling Read_attitude.c...
+compiling Anonymous.c...
+compiling KEY.c...
+compiling Kalman.c...
+Kalman.c(49): warning:  #550-D: variable "angle_dot"  was set but never used
+  	static float angle_dot;
+Kalman.c: 1 warning, 0 errors
+compiling VOFA.c...
+compiling Percentage_res.c...
+compiling Show_DS1302_Data.c...
+compiling W25Q16.c...
+W25Q16.h(16): warning:  #1295-D: Deprecated declaration SPI_Start - give arg types
+  void SPI_Start()    ;
+W25Q16.h(18): warning:  #1295-D: Deprecated declaration SPI_Stop - give arg types
+  void SPI_Stop()     ;
+W25Q16.c(21): warning:  #188-D: enumerated type mixed with another type
+      HAL_GPIO_WritePin(
+W25Q16.c(31): warning:  #188-D: enumerated type mixed with another type
+      HAL_GPIO_WritePin(
+W25Q16.c(40): warning:  #188-D: enumerated type mixed with another type
+      HAL_GPIO_WritePin(
+W25Q16.c(248): warning:  #1-D: last line of file ends without a newline
+  }
+W25Q16.c: 6 warnings, 0 errors
+compiling W25Q16_Ins.c...
+W25Q16.h(16): warning:  #1295-D: Deprecated declaration SPI_Start - give arg types
+  void SPI_Start()    ;
+W25Q16.h(18): warning:  #1295-D: Deprecated declaration SPI_Stop - give arg types
+  void SPI_Stop()     ;
+W25Q16_Ins.c: 2 warnings, 0 errors
+compiling gpio.c...
+compiling stm32f1xx_hal_msp.c...
+compiling stm32f1xx_it.c...
+compiling adc.c...
+compiling i2c.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling dma.c...
+compiling usart.c...
+compiling main.c...
+../MDK-ARM/W25Q16.h(16): warning:  #1295-D: Deprecated declaration SPI_Start - give arg types
+  void SPI_Start()    ;
+../MDK-ARM/W25Q16.h(18): warning:  #1295-D: Deprecated declaration SPI_Stop - give arg types
+  void SPI_Stop()     ;
+../Core/Src/main.c: 2 warnings, 0 errors
+compiling stm32f1xx_hal_adc.c...
+compiling stm32f1xx_hal_adc_ex.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_exti.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_i2c.c...
+compiling oledfont.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling system_stm32f1xx.c...
+compiling IIC.c...
+compiling mpu6050.c...
+compiling stm32f1xx_hal_uart.c...
+compiling inv_mpu_dmp_motion_driver.c...
+compiling inv_mpu.c...
+compiling oled.c...
+..\4pins_OLED\oled.c(482): warning:  #186-D: pointless comparison of unsigned integer with zero
+  				if((x>=0&&x<7)||(x>48&&x<=55))
+..\4pins_OLED\oled.c(475): warning:  #177-D: variable "j"  was declared but never referenced
+     uint32_t j = 0;
+..\4pins_OLED\oled.c(533): warning:  #186-D: pointless comparison of unsigned integer with zero
+  				if((x>=0&&x<7)||(x>48&&x<=55))
+..\4pins_OLED\oled.c(524): warning:  #177-D: variable "j"  was declared but never referenced
+     uint32_t j = 0;
+..\4pins_OLED\oled.c(564): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if(x<0 || x>127 || y<0 || y>63)return 1;//????????????????????.
+..\4pins_OLED\oled.c(564): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if(x<0 || x>127 || y<0 || y>63)return 1;//????????????????????.
+..\4pins_OLED\oled.c(1109): warning:  #550-D: variable "change"  was set but never used
+  		 uint8_t change;
+..\4pins_OLED\oled.c(1139): warning:  #550-D: variable "change"  was set but never used
+  		 uint8_t change;
+..\4pins_OLED\oled.c(1169): warning:  #550-D: variable "change"  was set but never used
+  		 uint8_t change;
+..\4pins_OLED\oled.c(1157): warning:  #177-D: variable "n"  was declared but never referenced
+  	uint8_t n=x+5;
+..\4pins_OLED\oled.c(1199): warning:  #550-D: variable "change"  was set but never used
+  		 uint8_t change;
+..\4pins_OLED\oled.c(1187): warning:  #177-D: variable "n"  was declared but never referenced
+  	uint8_t n=x+5;
+..\4pins_OLED\oled.c(1438): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		else if (variable<=455&&variable>=0)
+..\4pins_OLED\oled.c(1559): warning:  #186-D: pointless comparison of unsigned integer with zero
+       if (progress_move>=0&&progress_move<=2)
+..\4pins_OLED\oled.c(2147): warning:  #177-D: variable "len_err"  was declared but never referenced
+  	float p=0.40f,x_err,y_err,len_err;
+..\4pins_OLED\oled.c(2273): warning:  #177-D: variable "a"  was declared but never referenced
+  	uint8_t a = 0;	
+..\4pins_OLED\oled.c(2320): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		if(x >= 0 && x <= 127)//?????????????????????
+..\4pins_OLED\oled.c(2311): warning:  #177-D: variable "i"  was declared but never referenced
+  	uint8_t i = 0;
+..\4pins_OLED\oled.c(2314): warning:  #177-D: variable "m"  was declared but never referenced
+  	uint8_t m = 0;
+..\4pins_OLED\oled.c(2354): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		if(x >= 0 && x <= 127)//?????????????????????
+..\4pins_OLED\oled.c(2367): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		if(x >= 0 && x <= 127)//?????????????????????
+..\4pins_OLED\oled.c(2345): warning:  #177-D: variable "i"  was declared but never referenced
+  	uint8_t i = 0;
+..\4pins_OLED\oled.c(2408): warning:  #186-D: pointless comparison of unsigned integer with zero
+  			if(x >= 0 && x <= 127)//?????????????????????
+..\4pins_OLED\oled.c(2421): warning:  #186-D: pointless comparison of unsigned integer with zero
+  			if(x >= 0 && x <= 127)//?????????????????????
+..\4pins_OLED\oled.c(2438): warning:  #186-D: pointless comparison of unsigned integer with zero
+  			if(x >= 0 && x <= 127)//?????????????????????
+..\4pins_OLED\oled.c(2451): warning:  #186-D: pointless comparison of unsigned integer with zero
+  			if(x >= 0 && x <= 127)//?????????????????????
+..\4pins_OLED\oled.c(2464): warning:  #186-D: pointless comparison of unsigned integer with zero
+  			if(x >= 0 && x <= 127)//?????????????????????
+..\4pins_OLED\oled.c(2481): warning:  #186-D: pointless comparison of unsigned integer with zero
+  			if(x >= 0 && x <= 127)//?????????????????????
+..\4pins_OLED\oled.c(2494): warning:  #186-D: pointless comparison of unsigned integer with zero
+  			if(x >= 0 && x <= 127)//?????????????????????
+..\4pins_OLED\oled.c(2507): warning:  #186-D: pointless comparison of unsigned integer with zero
+  			if(x >= 0 && x <= 127)//?????????????????????
+..\4pins_OLED\oled.c(2520): warning:  #186-D: pointless comparison of unsigned integer with zero
+  			if(x >= 0 && x <= 127)//?????????????????????
+..\4pins_OLED\oled.c(2394): warning:  #177-D: variable "i"  was declared but never referenced
+  	uint8_t i = 0;
+..\4pins_OLED\oled.c(2556): warning:  #186-D: pointless comparison of unsigned integer with zero
+  			if(x >= 0 && x <= 127)//?????????????????????
+..\4pins_OLED\oled.c(2595): warning:  #186-D: pointless comparison of unsigned integer with zero
+  			if(x >= 0 && x <= 127)//?????????????????????
+..\4pins_OLED\oled.c(2624): warning:  #177-D: variable "n"  was declared but never referenced
+    uint8_t x = 0, y = 0,n=0,current_position=0,biankuang=0;
+..\4pins_OLED\oled.c(2624): warning:  #177-D: variable "current_position"  was declared but never referenced
+    uint8_t x = 0, y = 0,n=0,current_position=0,biankuang=0;
+..\4pins_OLED\oled.c(2624): warning:  #177-D: variable "biankuang"  was declared but never referenced
+    uint8_t x = 0, y = 0,n=0,current_position=0,biankuang=0;
+..\4pins_OLED\oled.c(2674): warning:  #177-D: variable "n"  was declared but never referenced
+    uint8_t x = 0, y = 0,n=0,current_position=0,biankuang=0;
+..\4pins_OLED\oled.c(2674): warning:  #177-D: variable "current_position"  was declared but never referenced
+    uint8_t x = 0, y = 0,n=0,current_position=0,biankuang=0;
+..\4pins_OLED\oled.c(2674): warning:  #177-D: variable "biankuang"  was declared but never referenced
+    uint8_t x = 0, y = 0,n=0,current_position=0,biankuang=0;
+..\4pins_OLED\oled.c(2719): warning:  #177-D: variable "j"  was declared but never referenced
+    uint32_t j = 0;
+..\4pins_OLED\oled.c(2754): warning:  #177-D: variable "j"  was declared but never referenced
+    uint32_t j = 0;
+..\4pins_OLED\oled.c: 42 warnings, 0 errors
+linking...
+Program Size: Code=19964 RO-data=3456 RW-data=2892 ZI-data=2540  
+FromELF: creating hex file...
+"Toothbrush\Toothbrush.axf" - 0 Error(s), 53 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM.CMSIS.5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Toothbrush
+  D:\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  D:\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Build Time Elapsed:  00:00:22
+</pre>
+</body>
+</html>
