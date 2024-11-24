@@ -1,0 +1,1 @@
+toothbrush_l072cbt6\startup_stm32l072xx.o: startup_stm32l072xx.s
